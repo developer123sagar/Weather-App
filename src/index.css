@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .h {
+    @apply border border-solid border-red-500;
+  }
+  .parameter-row {
+    @apply flex justify-between;
+  }
+  .parameter-label {
+    @apply font-normal text-left text-xs;
+  }
+  .parameter-value {
+    @apply text-right font-semibold text-xs;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px !important;
+  width: 2px;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #36313178;
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: all 1s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
