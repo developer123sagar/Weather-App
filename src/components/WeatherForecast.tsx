@@ -84,7 +84,6 @@ const WeatherForecast = ({ data }: any) => {
   return (
     <>
       <h1 className="font-bold text-xl">Daily</h1>
-
       {data.list.splice(0, 7).map((item: any, id: any) => (
         <div
           key={id}
