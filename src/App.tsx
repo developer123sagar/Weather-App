@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className="w-1/2 mx-auto">
+    <div className="w-full m-2 lg:w-1/2 lg:mx-auto">
       <LocationSearch
         placeH="Enter your city"
         label="Search Location"

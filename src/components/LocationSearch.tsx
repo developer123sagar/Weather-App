@@ -54,7 +54,7 @@ export const LocationSearch = ({
   }, [selectedCity]);
 
   return (
-    <div className="w-full font-medium h-auto">
+    <div className="w-[90%] lg:w-full font-medium h-auto mx-auto">
       {label && (
         <label className="block text-sm font-medium leading-6 text-label">
           {label}

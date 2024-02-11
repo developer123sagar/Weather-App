@@ -3,7 +3,7 @@
 const CurrentWeather = ({ data }: { data: any }) => {
 
   return (
-    <div className="w-[20rem] rounded bg-[#333] text-white shadow mx-auto mt-5 px-5 pb-5">
+    <div className="w-[90%] my-5 lg:w-[20rem] rounded bg-[#333] text-white shadow mx-auto mt-5 px-5 pb-5">
       <ul className="flex-between">
         <li>
           <p className="font-semibold leading-4 tracking-wider">{data.city}</p>

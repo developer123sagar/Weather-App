@@ -23,13 +23,22 @@ const WeatherForecast = ({ data }: any) => {
     return (
       <div className="flex items-center text-sm cursor-pointer w-full">
         <img src={img} alt="forecast" className="w-10" />
-        <label htmlFor="title" className="text-[#212121] ml-4 flex flex-1">
+        <label
+          htmlFor="title"
+          className="text-[#212121] ml-1 lg:ml-4 flex flex-1 text-xs lg:text-base"
+        >
           {day}
         </label>
-        <label htmlFor="description" className="flex flex-1 mr-4 text-right">
+        <label
+          htmlFor="description"
+          className="flex flex-1 mr-1 lg:mr-4 text-right text-xs lg:text-base"
+        >
           {description}
         </label>
-        <label htmlFor="temprature" className="text-gray-500">
+        <label
+          htmlFor="temprature"
+          className="text-gray-500 text-xs lg:text-base"
+        >
           {temp}
         </label>
       </div>
@@ -83,7 +92,7 @@ const WeatherForecast = ({ data }: any) => {
 
   return (
     <>
-      <h1 className="font-bold text-xl">Daily</h1>
+      <h1 className="font-bold text-xl mx-auto w-[90%] lg:w-full">Daily</h1>
       {data.list.splice(0, 7).map((item: any, id: any) => (
         <div
           key={id}
